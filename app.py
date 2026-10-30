@@ -13,11 +13,11 @@ def cargar_modelo():
 
 modelo = cargar_modelo()
 
-st.title('🎓 Predicción de Deserción Escolar')
+st.title(' Predicción de Deserción Escolar')
 st.write('Ingrese los datos del estudiante para predecir el riesgo de deserción.')
 st.divider()
 
-st.subheader('📋 Datos del estudiante')
+st.subheader(' Datos del estudiante')
 col1, col2 = st.columns(2)
 
 with col1:
@@ -58,9 +58,9 @@ if st.button('🔍 Predecir', use_container_width=True):
 
     with col_res:
         if prediccion == 1:
-            st.error('⚠️ Alto riesgo de deserción')
+            st.error(' Alto riesgo de deserción')
         else:
-            st.success('✅ Bajo riesgo de deserción')
+            st.success('Bajo riesgo de deserción')
 
     with col_prob:
         st.metric('Probabilidad de desertar',  f'{probabilidad[1]:.1%}')
