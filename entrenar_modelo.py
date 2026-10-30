@@ -58,5 +58,5 @@ modelo.fit(X_train, y_train)
 with open('modelo.pkl', 'wb') as f:
     pickle.dump(modelo, f)
 
-print('✅ Modelo guardado como modelo.pkl')
+print(' Modelo guardado como modelo.pkl')
 print(f'   Accuracy: {modelo.score(X_test, y_test):.2%}')
